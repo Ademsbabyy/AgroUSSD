@@ -23,7 +23,6 @@ class Farmers:
             farmers[phone_number] = {'name': name, 'pin': pin}
             f.seek(0)
             json.dump(farmers, f, indent=4)
-            f.truncate()
         print("Registration successful.")
         return True
 
